@@ -25,7 +25,7 @@ jobs:
               python-version: 3.x
           - run: pip install zensical
           - run: zensical build --clean
-          - run: bash -c "echo 'wiki.t2linux.org' > build/CNAME"
+          - run: bash -c "echo 't2linux-wiki.noa.codes' > build/CNAME"
           - uses: actions/upload-pages-artifact@v4
             with:
               path: build
