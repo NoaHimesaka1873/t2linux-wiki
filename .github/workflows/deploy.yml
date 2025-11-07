@@ -31,6 +31,7 @@ jobs:
           - run: pip install zensical
           - run: zensical build --clean
           - run: bash -c "echo 't2linux-wiki.noa.codes' > build/CNAME"
+          - run: bash -c "cp -r redirs/* build/guides"
           - uses: actions/upload-pages-artifact@v4
             with:
               path: build
